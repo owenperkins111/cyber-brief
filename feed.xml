@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+ <channel>
+  <title>Cyber Brief</title>
+  <link>https://owenperkins111.github.io/cyber-brief/</link>
+  <atom:link href="https://owenperkins111.github.io/cyber-brief/feed.xml" rel="self" type="application/rss+xml"/>
+  <language>en-gb</language>
+  <description>A short daily cyber security briefing for defenders: actively exploited vulnerabilities, patch priorities, breaches and threat actor news. Generated each morning by Claude from public reporting.</description>
+  <itunes:summary>A short daily cyber security briefing for defenders: actively exploited vulnerabilities, patch priorities, breaches and threat actor news. Generated each morning by Claude from public reporting.</itunes:summary>
+  <itunes:author>Cyber Brief</itunes:author>
+  <itunes:image href="https://owenperkins111.github.io/cyber-brief/cover.png"/>
+  <itunes:category text="Technology"/>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:block>Yes</itunes:block>
+  <itunes:type>episodic</itunes:type>
+  <item>
+   <title>Tue 6 Oct: ASOS push-alert hack, NetScaler SAML zero-day, FortiMail 9.8</title>
+   <description>ASOS customer messaging platforms hijacked with Snowflake extortion claim; NetScaler SAML zero-day and critical FortiMail flaw exploited; Rejetto HFS scanning; Dell and Exchange fixes; Denmark population register breach; ShinyHunters arrest; RMM abuse.</description>
+   <itunes:summary>ASOS customer messaging platforms hijacked with Snowflake extortion claim; NetScaler SAML zero-day and critical FortiMail flaw exploited; Rejetto HFS scanning; Dell and Exchange fixes; Denmark population register breach; ShinyHunters arrest; RMM abuse.</itunes:summary>
+   <enclosure url="https://owenperkins111.github.io/cyber-brief/audio/2026-10-06.mp3" length="2359149" type="audio/mpeg"/>
+   <guid isPermaLink="false">cyber-brief-2026-10-06</guid>
+   <pubDate>Tue, 06 Oct 2026 21:21:04 +0000</pubDate>
+   <itunes:duration>4:54</itunes:duration>
+   <itunes:explicit>false</itunes:explicit>
+  </item>
+ </channel>
+</rss>
