@@ -6,6 +6,8 @@ Models (kokoro.onnx, voices.bin) are fetched from GitHub releases if missing.
 """
 import argparse, os, subprocess, sys, tempfile, urllib.request
 import numpy as np
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import pronounce
 import soundfile as sf
 
 REL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
@@ -34,13 +36,12 @@ def main():
     k = Kokoro(*ensure_models(a.models))
 
     text = open(a.script, encoding="utf-8").read()
-    paras = [p.strip() for p in text.split("\n") if p.strip()]
+    paras = [pronounce.fix(p.strip()) for p in text.split("\n") if p.strip()]
     chunks, sr = [], 24000
     for p in paras:
         samples, sr = k.create(p, voice=a.voice, speed=a.speed, lang=("en-gb" if a.voice.startswith("b") else "en-us"))
         chunks.append(samples)
-        # longer pause after short "section header" lines
-        gap = 0.9 if len(p) < 60 else 0.55
+        gap = 0.9 if len(p) < 60 else 0.6  # longer pause after short transition lines
         chunks.append(np.zeros(int(sr * gap), dtype=samples.dtype))
     audio = np.concatenate(chunks)
 
