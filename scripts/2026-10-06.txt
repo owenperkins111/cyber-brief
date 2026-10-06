@@ -10,11 +10,11 @@ Next, something smaller but nasty. Rejetto H F S, the little HTTP file server, h
 
 Two more for the patch list. Dell's urging customers to update Dell System Update on PowerEdge servers, because of a flaw that can hand an attacker root. And Microsoft's pushed an out-of-band Exchange update for a mailbox access bug. If you've still got Exchange on-prem, don't wait for Patch Tuesday next week.
 
-Now, breaches.
+Now, breaches, and the big UK one today is ASOS.
 
-The big one is Denmark. The national population register's been breached, and that's names, addresses and citizen numbers for around eight point eight million people. That's basically the whole country. Expect some very convincing, very targeted phishing off the back of that.
+This morning, ASOS app users got a push notification that just said ASOS hacked. The message claimed the attackers had fully compromised the company's Snowflake environment, and told ASOS to engage with them or the data gets leaked. It's from a group calling itself Xuanye. ASOS has confirmed that third-party platforms it uses to message customers were accessed, and that names and contact details may have been exposed. It says payment cards and passwords weren't affected. Worth being clear though: the Snowflake claim is the attackers' word, not ASOS's. If you're an ASOS customer, ignore the link in that alert, and expect follow-up phishing using those details. For everyone else, it's a good reminder that your push and email platforms are part of your attack surface. Check who has access to them, and whether M F A is enforced.
 
-Closer to home, ASOS has confirmed a breach of customer data tied to its Snowflake environment. Same story we've heard a lot of now. It's a good nudge to check M F A on your S A A S and data warehouse accounts, and to clear out any old service credentials that are still hanging around.
+The other big one is Denmark. The national population register's been breached, and that's names, addresses and citizen numbers for around eight point eight million people. That's basically the whole country. Expect some very convincing, very targeted phishing off the back of that.
 
 Elsewhere, Nikkei in Japan has disclosed intrusions hitting staff and users, and the University of Illinois Chicago's medical school has been hit with ransomware.
 
