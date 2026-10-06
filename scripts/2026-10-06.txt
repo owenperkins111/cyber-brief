@@ -4,30 +4,30 @@ Right, let's start with the one that's probably on your list today.
 
 Citrix has another NetScaler zero-day, and yes, it's being exploited. The good news? It only matters if you're using NetScaler for SAML, either as the service provider or the identity provider. The bad news is that if you are, attackers can knock the box offline, and keep hitting it so it stays offline. Patches are out for both the fourteen point one and thirteen point one branches, CISA's added it to the known exploited list, and the US and Australia have both put out warnings. If you've got SAML on a NetScaler, it's today's job.
 
-And while we're on edge devices, Fortinet. There's a critical FortiMail bug, nine point eight, no login needed, and it lets an attacker write files onto the box. It's already being used in the wild. If you can't patch this morning, at the very least turn off the I B E feature and get that management interface off the internet.
+And while we're on edge devices, Fortinet. There's a critical FortiMail bug, nine point eight, no login needed, and it lets an attacker write files onto the box. It's already being used in the wild. If you can't patch this morning, at the very least turn off the IBE feature and get that management interface off the internet.
 
-Next, something smaller but nasty. Rejetto H F S, the little HTTP file server, has a critical bug that's being actively scanned for. Remote code execution and account takeover. It's exactly the kind of thing that gets stood up for a quick file share and then forgotten about, so it's worth a quick look across your external footprint.
+Next, something smaller but nasty. Rejetto HFS, the little HTTP file server, has a critical bug that's being actively scanned for. Remote code execution and account takeover. It's exactly the kind of thing that gets stood up for a quick file share and then forgotten about, so it's worth a quick look across your external footprint.
 
 Two more for the patch list. Dell's urging customers to update Dell System Update on PowerEdge servers, because of a flaw that can hand an attacker root. And Microsoft's pushed an out-of-band Exchange update for a mailbox access bug. If you've still got Exchange on-prem, don't wait for Patch Tuesday next week.
 
 Now, breaches, and the big UK one today is ASOS.
 
-This morning, ASOS app users got a push notification that just said ASOS hacked. The message claimed the attackers had fully compromised the company's Snowflake environment, and told ASOS to engage with them or the data gets leaked. It's from a group calling itself Xuanye. ASOS has confirmed that third-party platforms it uses to message customers were accessed, and that names and contact details may have been exposed. It says payment cards and passwords weren't affected. Worth being clear though: the Snowflake claim is the attackers' word, not ASOS's. If you're an ASOS customer, ignore the link in that alert, and expect follow-up phishing using those details. For everyone else, it's a good reminder that your push and email platforms are part of your attack surface. Check who has access to them, and whether M F A is enforced.
+This morning, ASOS app users got a push notification that just said ASOS hacked. The message claimed the attackers had fully compromised the company's Snowflake environment, and told ASOS to engage with them or the data gets leaked. It's from a group calling itself Xuanye. ASOS has confirmed that third-party platforms it uses to message customers were accessed, and that names and contact details may have been exposed. It says payment cards and passwords weren't affected. Worth being clear though: the Snowflake claim is the attackers' word, not ASOS's. If you're an ASOS customer, ignore the link in that alert, and expect follow-up phishing using those details. For everyone else, it's a good reminder that your push and email platforms are part of your attack surface. Check who has access to them, and whether MFA is enforced.
 
 The other big one is Denmark. The national population register's been breached, and that's names, addresses and citizen numbers for around eight point eight million people. That's basically the whole country. Expect some very convincing, very targeted phishing off the back of that.
 
 Elsewhere, Nikkei in Japan has disclosed intrusions hitting staff and users, and the University of Illinois Chicago's medical school has been hit with ransomware.
 
-On the threat actor front, there's some good news for once. An alleged member of ShinyHunters, the crew behind a long run of S A A S data thefts, has reportedly been picked up in Jordan, and is said to be helping the FBI find the rest of them. The alleged developer of the Ploutus ATM jackpotting malware has been arrested in the US too.
+On the threat actor front, there's some good news for once. An alleged member of ShinyHunters, the crew behind a long run of SaaS data thefts, has reportedly been picked up in Jordan, and is said to be helping the FBI find the rest of them. The alleged developer of the Ploutus ATM jackpotting malware has been arrested in the US too.
 
-A couple of things worth passing on to users and clients. Fake ChatGPT and Gemini sites are phishing ad account managers, and they're grabbing M F A codes in real time. So this is session theft, not just stolen passwords. And attackers are still leaning on legitimate R M M tools to get in, because that traffic just looks like business as usual. If you're running an M S P, it's worth checking which R M M agents are actually allowed in each client, and alerting when a new one turns up.
+A couple of things worth passing on to users and clients. Fake ChatGPT and Gemini sites are phishing ad account managers, and they're grabbing MFA codes in real time. So this is session theft, not just stolen passwords. And attackers are still leaning on legitimate RMM tools to get in, because that traffic just looks like business as usual. If you're running an MSP, it's worth checking which RMM agents are actually allowed in each client, and alerting when a new one turns up.
 
-One for the UK. M I five's raised concerns about Chinese funding of UK university research, warning that over a hundred academics may have unknowingly worked on projects linked to Chinese security services.
+One for the UK. MI5's raised concerns about Chinese funding of UK university research, warning that over a hundred academics may have unknowingly worked on projects linked to Chinese security services.
 
-And a quick A I one before we wrap up. Wikimedia says autonomous A I agents made unauthorised edits to Wikipedia and tried to tamper with an internal tool. And Google's frozen its open-source bug bounty, because it's been buried in low-quality A I generated reports.
+And a quick AI one before we wrap up. Wikimedia says autonomous AI agents made unauthorised edits to Wikipedia and tried to tamper with an internal tool. And Google's frozen its open-source bug bounty, because it's been buried in low-quality AI generated reports.
 
 Patch Tuesday is next Tuesday, the thirteenth.
 
-So, three things for today. One, if you run NetScaler with SAML, patch it. Two, patch FortiMail, or at least lock down its management interface. Three, have a look at your external footprint for Rejetto H F S and any R M M agents you don't recognise.
+So, three things for today. One, if you run NetScaler with SAML, patch it. Two, patch FortiMail, or at least lock down its management interface. Three, have a look at your external footprint for Rejetto HFS and any RMM agents you don't recognise.
 
 That's your lot. Have a good one.
