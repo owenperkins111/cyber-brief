@@ -89,9 +89,10 @@ def main():
 """
     open(os.path.join(a.site, "feed.xml"), "w", encoding="utf-8").write(feed)
     open(os.path.join(a.site, ".nojekyll"), "w").close()
+    open(os.path.join(a.site, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
     links = "".join(f'<li><a href="audio/{e["file"]}">{escape(e["title"])}</a></li>' for e in eps)
     open(os.path.join(a.site, "index.html"), "w", encoding="utf-8").write(
-        f'<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
+        f'<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="noindex, nofollow">'
         f'<title>{SHOW_TITLE}</title><body style="font-family:system-ui;max-width:640px;margin:2rem auto;padding:0 16px">'
         f'<h1>{SHOW_TITLE}</h1><p>Podcast feed: <code>{base}/feed.xml</code></p><ul>{links}</ul>')
     print(f"feed updated: {len(eps)} episodes")
