@@ -1,0 +1,20 @@
+[
+ {
+  "file": "2026-10-10.mp3",
+  "date": "2026-10-10",
+  "title": "Sat 10 Oct: Atlassian exploited in hours, NetScaler SAML fix, ASOS breach",
+  "summary": "Atlassian Data Center file-read bug exploited within hours, critical NetScaler SAML patch, FortiBleed lockout warning, ASOS breach, Integrity Tech advisory, AI-assisted bank attacks, hidden prompt injection in phishing, Rein Security funding and the CS&R Bill.",
+  "pub": "Sat, 10 Oct 2026 05:44:31 +0000",
+  "bytes": 3388461,
+  "secs": 423
+ },
+ {
+  "file": "2026-10-06.mp3",
+  "date": "2026-10-06",
+  "title": "Tue 6 Oct: ASOS push-alert hack, NetScaler SAML zero-day, FortiMail 9.8",
+  "summary": "ASOS customer messaging platforms hijacked with Snowflake extortion claim; NetScaler SAML zero-day and critical FortiMail flaw exploited; Rejetto HFS scanning; Dell and Exchange fixes; Denmark population register breach; ShinyHunters arrest; RMM abuse.",
+  "pub": "Tue, 06 Oct 2026 21:21:04 +0000",
+  "bytes": 2359149,
+  "secs": 294
+ }
+]
