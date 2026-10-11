@@ -1,0 +1,31 @@
+Morning. It's Sunday the 11th of October, and this is your Cyber Brief.
+
+Right, let's start with patching, and with a backup platform that a lot of managed service providers run. There's no fix for this one yet.
+
+Two flaws in AhsayCBS, the cloud backup server console from Ahsay, are being exploited in the wild. One is an authentication bypass, the other a command injection in the replication receiver, rated nine point three. Chained together, they give an unauthenticated attacker code execution as SYSTEM. Huntress saw attacks start late on Wednesday, with at least five organisations hit in the first day. The attackers dropped a web shell into the application folder, then installed a crypto miner dressed up as Microsoft Edge, with a fake Edge update service for persistence. The bad news is that the latest release is still vulnerable, and Ahsay hasn't said when a patch is coming. So for now, take the management interface and the replication receiver off the open internet, limit them to trusted addresses or a VPN, and check for compromise. Why does it matter? A backup server that holds many customers' data is exactly the box a ransomware crew would love to own. Today it's a miner. Tomorrow it might not be.
+
+And while we're on remote access kit, SonicWall's maximum severity bug in its SMA1000 gateways, scored ten out of ten, is now drawing exploitation attempts. It's a server-side request forgery in the WorkPlace interface that lets an unauthenticated attacker make the appliance send requests on their behalf, including to internal services. SonicWall patched it on Tuesday and hasn't yet flagged it as exploited, but honeypots run by Previdian picked up matching attack traffic within days. Nobody's confirmed a successful break-in yet. The smaller SMA100 boxes and SonicWall firewalls aren't affected. If you run an SMA1000, get the hotfix on today.
+
+One more for the diary. Tuesday is Patch Tuesday. And Microsoft has warned that devices on old or unsupported Windows versions will stop getting updates altogether next May and June, when its Windows Update certificates rotate. Up-to-date supported machines already have the new certificates. Anything older needs an upgrade plan, and that's worth a look across your estate now.
+
+Now breaches. A quick follow-up on ASOS, whose customers got that rogue push notification on Tuesday. The company's line hasn't changed: an attacker conned an employee out of their login by posing as a trusted contact, then reached third-party platforms holding names and contact details. ASOS says passwords and card details weren't touched. If you're advising anyone, the practical point is that phishing that pretends to be from ASOS is the next wave, so warn your users.
+
+Across the pond, the FBI says it's arrested another suspected member of ShinyHunters over the breach of its own jobs site. The FBI blames a contractor-run platform that hadn't installed a security update. ShinyHunters claims it used an Oracle PeopleSoft zero-day and moved into FBI cloud infrastructure. That's their claim, not confirmed. Samples do show employee data was exposed. The so-what? Your supplier's patching is your patching.
+
+On threat actors, a suspected leading member of the Qilin ransomware gang, a Russian national, was detained in Japan while visiting as a tourist and has now been extradited to Germany and arrested. Qilin's one of the busiest groups around, with more than two thousand three hundred victims listed. One arrest won't stop the brand, but it's a reminder that holiday travel is a real risk for these people.
+
+Right, AI and security.
+
+Push Security has spotted attackers buying Google search ads for people searching for Claude on a Mac. The clever bit is that the ad shows bing dot com, because it routes through a Bing click-tracking redirect, then a hacked WordPress site, then a fake Claude download page. That page shows the genuine install command, but the copy button swaps in a malicious one that pulls a script and pipes it straight into the shell. It's ClickFix with an AI twist. The so-what? Developers are installing AI tools at a rate that's hard to keep up with, and copy-paste install commands are now prime targets. Push your people towards official download pages, not search ads, and consider blocking ads on dev machines.
+
+Now, the business side.
+
+In the US, the owner of a Florida ransomware recovery firm, MonsterCloud, has been charged with wire fraud. Prosecutors allege the firm sold clients on proprietary decryption, but in reality quietly paid the ransomware gangs and marked up the cost. They say over five years it charged more than nineteen million dollars and paid out over eight million in ransoms. He's pleaded not guilty. The take for anyone building a cyber services business: incident response runs on trust, so be completely transparent about how you recover data and whether money ever goes to criminals.
+
+And here in the UK, the Information Commissioner's Office has opened a six-week call for evidence on the data protection risks of AI agents, closing on the 20th of November. It'll feed future guidance and a statutory code. The take: customers deploying agents will soon need help showing they're governed, and that's a service you can build now.
+
+And today's one to hunt. Off the back of AhsayCBS, look for new files appearing in your backup server's web application folders, especially Java server pages. The logic is simple: a web shell has to land on disk somewhere the web server will run it, and on a stable backup server, new pages almost never appear outside an upgrade. Pair that with any command shell or PowerShell launched by the backup service itself, and with any service named like an Edge updater running from an odd folder. Any of those should be treated as an incident.
+
+So, three things for today. One, lock down AhsayCBS consoles to trusted networks, because there's no patch yet. Two, get the SonicWall SMA1000 hotfix on now. Three, warn users about phishing posing as ASOS and fake AI tool downloads.
+
+That's your lot. Have a good one.
