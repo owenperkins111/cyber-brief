@@ -33,6 +33,7 @@ LEXICON = {
     "Qilin": "Chee-lin",
     "Ivanti": "Ivvanti",
     "ASOS": "Ace-oss",
+    "Heijn": "Hine",
     "OWASP": "oh-wasp",
     "NIS2": "nis 2",
     "macOS": "mac O-S",
