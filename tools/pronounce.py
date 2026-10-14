@@ -38,6 +38,9 @@ LEXICON = {
     "NIS2": "nis 2",
     "macOS": "mac O-S",
     "iOS": "eye O-S",
+    "Volexity": "Vo-lexity",
+    "Amatera": "Amma-tair-a",
+    ".NET": "dot net",
 }
 
 # Acronyms the phonemiser reads as a word even in context; force letters.
