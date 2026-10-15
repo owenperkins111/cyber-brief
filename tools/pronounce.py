@@ -41,6 +41,7 @@ LEXICON = {
     "Volexity": "Vo-lexity",
     "Amatera": "Amma-tair-a",
     ".NET": "dot net",
+    "PAN-OS": "pan O-S",
 }
 
 # Acronyms the phonemiser reads as a word even in context; force letters.
