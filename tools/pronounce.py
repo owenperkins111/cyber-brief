@@ -42,6 +42,7 @@ LEXICON = {
     "Amatera": "Amma-tair-a",
     ".NET": "dot net",
     "PAN-OS": "pan O-S",
+    "certutil": "cert-util",
 }
 
 # Acronyms the phonemiser reads as a word even in context; force letters.
