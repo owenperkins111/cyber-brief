@@ -1,0 +1,37 @@
+Morning. It's Friday the sixteenth of October, and this is your Cyber Brief.
+
+Right, let's start with edge devices, because there's a lot to patch going into the weekend.
+
+Palo Alto Networks has confirmed that a remote code execution bug in the PAN-OS management interface is being exploited. It needs an authenticated attacker with network access to the interface, but if they get there, they run code as root on the firewall. Palo Alto calls the exploitation very limited, but it's given the issue its highest urgency rating, and there's no workaround beyond locking the management interface down to trusted internal addresses. Fixes are out across all the supported branches, and CISA has added it to its known exploited list with a federal deadline of tomorrow. So if your management interface is reachable from anywhere it shouldn't be, that's the job for this morning.
+
+And while we're on edge devices, Cisco has a second exploited Secure Email Gateway flaw in as many months. This one's a path traversal in the malware protection feature, rated nine point eight. One crafted email can write files and run commands as root, but only when File Reputation is switched on in a mail policy. The good news is the fix is a Content Scanner Tools update that needs no restart, and it may already have arrived through automatic updates. Cisco has published no indicators, so check the version, run its built-in compromise check, and lean on your firewall logs, because an attacker with root can tidy up the box itself.
+
+One more for anyone running backup for clients. Two flaws in Ahsay's backup management console, an authentication bypass chained with command injection, are being used to plant web shells and crypto miners. Huntress spotted it first, and Ahsay has admitted its earlier patches didn't fully fix either bug. New hotfixes are out for versions seven through ten. Backup servers sitting on the internet are exactly where you don't want an intruder with system rights.
+
+Now, breaches. The Legal Aid Agency has updated its count on last year's hack, and it's worse than we thought. The Ministry of Justice now confirms the stolen data includes around a quarter of a million records from before 2007, going as far back as 1978, plus some probation data from 2010 to 2017. Depending on the person, that can mean National Insurance numbers, financial details and criminal case records. The government says that figure isn't a count of people, and it's seen no sign the data has been published. Nobody's said who did it or how they got in. The lesson? Data you've kept for decades is data you can lose.
+
+Elsewhere on the high street, TFG London, which owns Hobbs, Whistles and Phase Eight, has confirmed a cyber incident that's taken several systems offline since last Sunday. Stores are open, some online orders are delayed, and the company says it has no reason to believe payment data is at risk. Whether anything was stolen is still under investigation, and no group has claimed it.
+
+On the threat actor front, the ShinyHunters investigation has taken a strange turn. A Canadian ransomware negotiator was arrested in the US last week on extortion charges, the third arrest tied to the group in recent weeks. The complaint is sealed, so what he's actually alleged to have done isn't public yet. But it's a reminder to vet whoever you'd call in a crisis before you need them.
+
+Right, AI and security.
+
+Huntress says crooks are building Custom GPTs on the real ChatGPT site, dressed up as a new model, that send users off to a fake CAPTCHA page. That page tells them to paste a PowerShell command, which ends with a remote access trojan. OpenAI took the first one down, but the campaign's moved to new domains. Your users trust the AI tool, so the lure now borrows that trust.
+
+Separately, a researcher says hidden instructions in a public GitHub repository tricked ChatGPT's GitHub integration into committing a workflow to a different private repo, which then sent off a test secret. That's his claim, unverified, and he says OpenAI closed it as out of scope. Either way, the fix is in your hands. Give AI connectors access to one repo, not all of them.
+
+Now, the business side.
+
+Quantum computing firm IonQ has agreed to buy zero trust company Elisity in an all-stock deal worth up to one point three billion dollars, pitching it as microsegmentation plus post-quantum crypto. The take for anyone building a services business? Post-quantum readiness is moving from slideware into product bundles, so a simple crypto inventory offer could get easier to sell.
+
+And here at home, the Cyber Security and Resilience Bill is due back in the Lords for report stage on the twenty-sixth, with royal assent expected between late this year and next spring. Managed service providers are firmly in scope, with a twenty-four hour initial incident notification. If you sell managed services, start mapping your reporting process now. Your customers will ask.
+
+And today's one to hunt. Take the Ahsay attacks. The backup service runs the web app, so if that service starts launching command prompts, curl or certutil, something's very wrong. Huntress also saw the miner hiding as a fake Edge update service. So alert when your backup software spawns shells or download tools, and check for any service pretending to be Edge that isn't running from Edge's normal install folder. Both are cheap to build and rarely fire on legitimate activity.
+
+Before we wrap up, this week's top three. First, a record Patch Tuesday, with over fourteen hundred fixes from Microsoft and a Windows Shell bug that bypasses Mark of the Web already being exploited. Second, exploited flaws on Palo Alto firewalls and Cisco email gateways, both straight onto CISA's list. Third, the Legal Aid Agency breach turning out to reach back nearly fifty years.
+
+And something for the weekend. Have a look at the open Sigma rules project on GitHub and try writing one rule of your own. Sigma's a vendor-neutral way to describe detections, and vendors like Huntress now publish their hunting logic in it, so being able to read and adapt those rules turns threat reports into alerts much faster.
+
+So, three things for today. One, lock down and patch any PAN-OS management interface you can reach. Two, check that Cisco email gateways with File Reputation have the latest Content Scanner Tools update. Three, if you run Ahsay, apply the new hotfixes and hunt for odd child processes from the backup service.
+
+That's your lot. Have a good one.
