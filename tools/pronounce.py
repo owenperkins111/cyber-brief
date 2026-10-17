@@ -43,6 +43,9 @@ LEXICON = {
     ".NET": "dot net",
     "PAN-OS": "pan O-S",
     "certutil": "cert-util",
+    "AOMEI": "A-oh-may",
+    "Varonis": "Vuh-ronniss",
+    "Varonis's": "Vuh-ronniss's",
 }
 
 # Acronyms the phonemiser reads as a word even in context; force letters.
