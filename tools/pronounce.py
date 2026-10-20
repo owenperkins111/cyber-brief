@@ -46,6 +46,7 @@ LEXICON = {
     "AOMEI": "A-oh-may",
     "Varonis": "Vuh-ronniss",
     "Varonis's": "Vuh-ronniss's",
+    "NGINX": "engine-x",
 }
 
 # Acronyms the phonemiser reads as a word even in context; force letters.
