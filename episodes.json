@@ -1,0 +1,110 @@
+[
+ {
+  "file": "2026-10-20.mp3",
+  "date": "2026-10-20",
+  "title": "Tue 20 Oct: ConnectWise backup breach, BeyondTrust zero-day, NGINX fixes",
+  "summary": "ConnectWise Cloud Backup supply chain attack hits Microsoft 365 tenants, BeyondTrust Remote Support zero-day, F5 NGINX patches, Exchange update issue, Plex exploits, Nikkei and TFG London breaches, OpenCode AI key exposure, Q3 cyber funding and the Cyber Security and Resilience Bill.",
+  "pub": "Tue, 20 Oct 2026 05:42:05 +0000",
+  "bytes": 3254061,
+  "secs": 406
+ },
+ {
+  "file": "2026-10-19.mp3",
+  "date": "2026-10-19",
+  "title": "Monday 19 October: ConnectWise backup breach, BeyondTrust zero-day, FortiOS malware",
+  "summary": "ConnectWise Cloud Backup abused to breach Microsoft 365 tenants, BeyondTrust Remote Support zero-day exploited by China-linked spies, PEERSTITCH malware on FortiOS, SiteGuard WAF exploitation, F5 and Juniper fixes, BAE Systems incident, an OpenAI agent raiding a crypto wallet, and Proofpoint buying Varonis.",
+  "pub": "Mon, 19 Oct 2026 05:49:52 +0000",
+  "bytes": 3245997,
+  "secs": 405
+ },
+ {
+  "file": "2026-10-18.mp3",
+  "date": "2026-10-18",
+  "title": "Sunday 18 October: ConnectWise backup app breach, BeyondTrust zero-day, Drupal RCE",
+  "summary": "A ConnectWise Cloud Backup credential used to break into Microsoft 365 tenants, a BeyondTrust Remote Support zero-day exploited by China-linked spies, critical Drupal fixes, the OpenCode AI key breach, and the UK Cyber Security and Resilience Bill.",
+  "pub": "Sun, 18 Oct 2026 05:45:16 +0000",
+  "bytes": 3259053,
+  "secs": 407
+ },
+ {
+  "file": "2026-10-17.mp3",
+  "date": "2026-10-17",
+  "title": "Saturday 17 October: BeyondTrust zero-day, PAN-OS fix, BAE incident",
+  "summary": "BeyondTrust Remote Support zero-day, PAN-OS and FortiManager attacks, BAE Systems incident hits US courts, Legal Aid Agency breach widens, AOMEI update tampering, OpenAI agent incidents, Proofpoint to buy Varonis.",
+  "pub": "Sat, 17 Oct 2026 05:45:06 +0000",
+  "bytes": 3383853,
+  "secs": 422
+ },
+ {
+  "file": "2026-10-16.mp3",
+  "date": "2026-10-16",
+  "title": "Friday 16 October: PAN-OS exploited, Cisco email gateway, Legal Aid breach",
+  "summary": "Exploited PAN-OS and Cisco Secure Email Gateway flaws, Ahsay backup attacks, Legal Aid Agency breach widens, TFG London incident, ShinyHunters arrest, Custom GPT ClickFix, IonQ buys Elisity, CS&R Bill, and the week's top three.",
+  "pub": "Fri, 16 Oct 2026 05:43:37 +0000",
+  "bytes": 3307437,
+  "secs": 413
+ },
+ {
+  "file": "2026-10-15.mp3",
+  "date": "2026-10-15",
+  "title": "Thu 15 Oct: Windows Shell zero-day, Ivanti VPN chain, Cisco email gateway",
+  "summary": "Patch Tuesday's exploited Windows Shell bug, Ivanti Connect Secure zero-day chain, Cisco Secure Email Gateway and PAN-OS exploitation, TFG London and H&M incidents, Meta GitHub breach, AI-built Chrome exploit, retail security spend and MSP standards.",
+  "pub": "Thu, 15 Oct 2026 05:39:57 +0000",
+  "bytes": 3345453,
+  "secs": 418
+ },
+ {
+  "file": "2026-10-14.mp3",
+  "date": "2026-10-14",
+  "title": "Wed 14 Oct: Record Patch Tuesday, Ivanti zero-day chain, TFG London hack",
+  "summary": "Microsoft's record Patch Tuesday and exploited Windows Shell bug, a three-bug Ivanti Connect Secure chain, the TFG London cyber incident, ClickFix via trusted services, AI-driven bug discovery, and AI security funding.",
+  "pub": "Wed, 14 Oct 2026 05:45:58 +0000",
+  "bytes": 3301869,
+  "secs": 412
+ },
+ {
+  "file": "2026-10-13.mp3",
+  "date": "2026-10-13",
+  "title": "Tue 13 Oct: Microsoft end of support, SonicWall SMA exploited, Ahold Delhaize",
+  "summary": "Patch Tuesday and today's Microsoft end-of-support deadlines, an exploited SonicWall SMA 1000 flaw, Citrix NetScaler, Ahold Delhaize and H&M incidents, rogue ScreenConnect via Power BI phishing, an AWS AI agent credential risk, IonQ buying Elisity, and an arrest in the ShinyHunters probe.",
+  "pub": "Tue, 13 Oct 2026 05:39:48 +0000",
+  "bytes": 3379821,
+  "secs": 422
+ },
+ {
+  "file": "2026-10-12.mp3",
+  "date": "2026-10-12",
+  "title": "Monday 12 October: NetScaler SAML flaw, Atlassian exploited, rogue AI agents",
+  "summary": "Critical NetScaler SAML bug, Atlassian file-read flaw exploited within hours, Flax Typhoon advisory, ShinyHunters-linked arrest, Anthropic cuts AI eval web access, insurers and rogue AI, agent security funding.",
+  "pub": "Mon, 12 Oct 2026 05:49:33 +0000",
+  "bytes": 3192045,
+  "secs": 398
+ },
+ {
+  "file": "2026-10-11.mp3",
+  "date": "2026-10-11",
+  "title": "Sunday 11 October: AhsayCBS zero-days, SonicWall SMA1000, fake Claude ads",
+  "summary": "Unpatched AhsayCBS backup flaws exploited, SonicWall SMA1000 attacks, ASOS and FBI breach updates, Qilin arrest, fake Claude install ads, a ransomware recovery fraud charge and the ICO's AI agent call for evidence.",
+  "pub": "Sun, 11 Oct 2026 05:49:43 +0000",
+  "bytes": 3135789,
+  "secs": 391
+ },
+ {
+  "file": "2026-10-10.mp3",
+  "date": "2026-10-10",
+  "title": "Sat 10 Oct: Atlassian exploited in hours, NetScaler SAML fix, ASOS breach",
+  "summary": "Atlassian Data Center file-read bug exploited within hours, critical NetScaler SAML patch, FortiBleed lockout warning, ASOS breach, Integrity Tech advisory, AI-assisted bank attacks, hidden prompt injection in phishing, Rein Security funding and the CS&R Bill.",
+  "pub": "Sat, 10 Oct 2026 05:44:31 +0000",
+  "bytes": 3388461,
+  "secs": 423
+ },
+ {
+  "file": "2026-10-06.mp3",
+  "date": "2026-10-06",
+  "title": "Tue 6 Oct: ASOS push-alert hack, NetScaler SAML zero-day, FortiMail 9.8",
+  "summary": "ASOS customer messaging platforms hijacked with Snowflake extortion claim; NetScaler SAML zero-day and critical FortiMail flaw exploited; Rejetto HFS scanning; Dell and Exchange fixes; Denmark population register breach; ShinyHunters arrest; RMM abuse.",
+  "pub": "Tue, 06 Oct 2026 21:21:04 +0000",
+  "bytes": 2359149,
+  "secs": 294
+ }
+]
